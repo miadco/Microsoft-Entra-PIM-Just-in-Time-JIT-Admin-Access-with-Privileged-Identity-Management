@@ -309,17 +309,35 @@ I validate the lab using only captured artifacts:
 
 ---
 
-## 📷 Screenshots
+## 📷 Screenshots (with images)
 
-| # | Filename                             | Description                                                                                            |
-| - | ------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| 1 | `01-pim-eligible-assignment.png`     | PIM role assignments page showing operator assigned as Eligible for User Administrator.                |
-| 2 | `02-pim-activation-settings.png`     | Role setting edit screen showing MFA required, justification required, and 1 hour activation duration. |
-| 3 | `03-pim-activation-request.png`      | Operator view showing User Administrator as activated with an end time.                                |
-| 4 | `04-admin-action-performed.png`      | User details showing Account enabled: No for the test user.                                            |
-| 5 | `05-audit-logs-activation-event.png` | Audit details showing PIM activation event succeeded for User Administrator.                           |
-| 6 | `06-audit-logs-assignment-event.png` | Audit details showing eligible assignment created for the role.                                        |
-| 7 | `07-audit-log-export.png`            | Optional screenshot showing export pane or CSV opened in Calc.                                         |
+### 01 – Eligible assignment exists (User Administrator)
+Eligible assignment shown under **User Administrator → Assignments → Eligible assignments**.
+![01 - PIM eligible assignment](https://github.com/miadco/Microsoft-Entra-PIM-Just-in-Time-JIT-Admin-Access-with-Privileged-Identity-Management/blob/main/01-pim-eligible-assignment.png)
+
+### 02 – Activation settings configured (MFA, justification, max duration)
+Role settings showing **max duration = 1 hour**, **Azure MFA required**, and **justification required**.
+![02 - PIM activation settings](https://github.com/miadco/Microsoft-Entra-PIM-Just-in-Time-JIT-Admin-Access-with-Privileged-Identity-Management/blob/main/02-pim-activation-settings.png)
+
+### 03 – Activation request submitted
+JIT activation initiated for the role (activation workflow evidence).
+![03 - PIM activation request](https://github.com/miadco/Microsoft-Entra-PIM-Just-in-Time-JIT-Admin-Access-with-Privileged-Identity-Management/blob/main/03-pim-activation-request.png)
+
+### 04 – Admin role is active (time-bound elevation)
+**My roles → Active assignments** shows **User Administrator** in **Activated** state with an end time.
+![04 - Admin action performed](https://github.com/miadco/Microsoft-Entra-PIM-Just-in-Time-JIT-Admin-Access-with-Privileged-Identity-Management/blob/main/04-admin-action-performed.png)
+
+### 05 – Audit evidence for activation event
+Audit details page showing the **role activation** event (who, what, when, status, correlation ID).
+![05 - Audit logs activation event](https://github.com/miadco/Microsoft-Entra-PIM-Just-in-Time-JIT-Admin-Access-with-Privileged-Identity-Management/blob/main/05-audit-logs-activation-event.png)
+
+### 06 – Audit evidence for eligible assignment event
+Audit details page showing the **eligible assignment completed** event.
+![06 - Audit logs assignment event](https://github.com/miadco/Microsoft-Entra-PIM-Just-in-Time-JIT-Admin-Access-with-Privileged-Identity-Management/blob/main/06-audit-logs-assignment-event.png)
+
+### 07 – CSV export reviewed in LibreOffice Calc
+Audit log export opened in Calc showing **PIM / RoleManagement** activity, including activation and expiration evidence.
+![07 - Audit log export](https://github.com/miadco/Microsoft-Entra-PIM-Just-in-Time-JIT-Admin-Access-with-Privileged-Identity-Management/blob/main/07-audit-log-export.png)
 
 ---
 
